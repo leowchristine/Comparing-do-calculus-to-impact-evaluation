@@ -5,5 +5,5 @@ This is not about codes for conducting casual inference in do-calculus versus im
 This is a place to consider how the two disciplines approach causality. What are the similarities and differences?
 
 The approach to impact evaluation is taken from the Department of Education What Works Clearinghouse (WWC).
-WWC is a well recongized resource on setting the standards for conducting causal studies in education.
+WWC is a well recognized authority on setting the standards for conducting causal studies in education.
 https://ies.ed.gov/ncee/wwc/
