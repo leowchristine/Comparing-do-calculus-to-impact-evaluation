@@ -1,8 +1,8 @@
 # Comparing-do-calculus-to-impact-evaluation
 
-This compares and contrasts the causal inference approach between do-calculus and impact evaluation
+The goal here is to compare and contrast the causal inference approach between do-calculus and impact evaluation
 
-This is not about codes for conducting casual inference in do-calculus versus impact evaluation. We are not fully there yet. 
+This is not about codes for conducting casual inference in do-calculus versus impact evaluation. I do't think we are truly there to automate causal inference. 
 This is a place to consider how the two disciplines approach causality. What are the similarities and differences?
 
 The causal approach from the impact evaluation perspective is taken from:
