@@ -1,0 +1,86 @@
+Analytic Procedures for Regression Discontinuity Design
+[based largely on Jacob, R., Zhu, P., Somers, M., Bloom, H. (2012). A practical guide to regression discontinuity. 
+New York: MDRC. Retrieved from https://www.mdrc.org/publication/practical-guide-regression-discontinuity]
+
+Graphical Analysis
+4 types of graphs are needed:
+1.	A graph plotting the probability of receiving treatment as a function of the forcing/rating variable 
+(i.e. the variable on the x-axis that is used to determine the cut-off) – this is to determine if the design is sharp or fuzzy
+2.	Graphs plotting the relationship between baseline variables (covariates or demographics variables) 
+and the forcing variable – this is to determine if there is baseline equivalence between the treatment and comparison groups
+3.	A frequency graph of the forcing variable – to determine if there is any manipulation of the forcing variable around the cut-off
+4.	A graph plotting the relationship between the outcome variable on the y-axis and the forcing variable on the x-axis – 
+this shows the impact of the treatment
+
+To plot #4 graph, it has been suggested in the literature that a smoothed plot should be presented, meaning:
+•	Divide the forcing variable into a number of equal sized intervals (i.e. bins). No bin should contain the cut-off point 
+within its bandwidth
+•	Determine the average value of the outcome variable and the mid-point value of each bin. Also count the number of observations 
+in each bin
+•	Plot the average outcome on the y-axis against the mid-point value of the forcing variable for each bin on the x-axis, 
+weighted by the number of observations
+•	To help visually, one can include flexible regression lines (such as lowess lines)
+
+There are ways to determine the optimal bin width. See Jacob et al (2012) p. 12-16.
+
+Determining the Correct Functional Form
+Two strategies to consider:
+1.	Parametric/Global Strategy
+This is based on the whole sample of data
+
+Determining a model that best fits the whole sample of data, starting from the simplest model. 
+The graphical analysis could also shed light on an appropriate model.
+Linear: Yi = α + β0Ti + β1ri + εi
+Linear interaction: Yi = α + β0Ti + β1ri + β2riTi + εi
+Quadratic: Yi = α + β0Ti + β1ri + β2ri2 + εi
+Quadratic interaction: Yi = α + β0Ti + β1ri + β2ri2 + β3ri Ti + β4ri2 Ti + εi
+Cubic: Yi = α + β0Ti + β1ri + β2ri2 + β3ri3 + εi
+Quadratic interaction: Yi = α + β0Ti + β1ri + β2ri2 + β3ri3 + β4riTi + β5ri2 Ti + β6ri3 Ti + εi
+
+For more details on the types of statistical test to determine the best model, see Jacob et al (2012) p.23-28.
+
+2.	Non-parametric/Local Strategy
+This is based on a localized, subset of data around the cut-off
+Two methods can be used for determining the appropriate model (and hence determining the point estimate) using the local strategy
+i)	“leave-one-out” cross validation procedure – this procedure picks the bandwidth that minimizes the cross-validation criterion, 
+that is, selecting the bin width that gives the smallest mean square error
+ii)	The “plug-in” procedure – software program for it is available from 
+the Imbens’ website http://www.economics.harvard.edu/faculty/imbens/software_imbens
+
+For both i) and ii), if the point estimates derived between different models 
+(from linear, to linear interaction, to quadratic, to quadratic interaction) are quite similar, the simpler model is to be selected.
+
+More details are found in Jacob et al (2012) p.31-38.
+
+Between the global strategy and the local strategy, if the findings agree, great! 
+If not, determine the discrepancy. If it is a matter of magnitude, choose the smaller magnitude to be conservative.
+
+If sample size is small, the global strategy might be preferred over the local strategy, 
+with the local strategy treated as complementary analysis, and vice versa with large samples.
+
+Precision and Sample Size Requirements
+According to Jacob et al (2012)
+1.	Compared to a RCT, a RD design would need at least 2.4 times the sample size to get the same precise estimate of impact.
+2.	When the estimation model gets more complex, it is at the expense of precision
+
+Sharp versus Fuzzy RD Designs
+Type II Fuzzy Design – when those assigned to the treatment did not receive the treatment (no-shows) 
+and those assigned to comparison received the treatment (cross-overs).
+
+Instead of estimating intent-to-treat (ITT), in a fuzzy design, we might be interested in the local average treatment effect (LATE)
+– that is, the unbiased estimate on those assigned to the treatment group who actually received the treatment and 
+those assigned to the comparison group and actually did not receive the treatment (i.e. compliers).
+
+Use of instrumental variable two-stage least squares to estimate the impact:
+First stage equation Ti = α1 + γ0Di + f1(ri) + εi
+Second stage equation Yi = α + β0Ti + f2(ri) + μi
+
+where Yi = outcome for individual i
+ Ti = 1 if individual i receives the treatment and 0 otherwise
+Di = 1 if individual i is assigned to treatment based on the cut-off and 0 otherwise
+f1(ri) = the relationship between the rating and treatment receipt for individual i
+f2(ri) = the relationship between the rating and outcome for individual i
+
+
+
+
