@@ -17,6 +17,6 @@ From the WWC and the impact evaluation perspective, randomized controlled trial 
 
 Similarly, according to The Book of Why by Judea Pearl, both do-calculus and counterfactuals are the basis for the new science on causality.
 
-Comaprison group and counterfactuals are crucial -- and there are times, with the right situation and the right data, causality can be inferred from one of the causal designs without conducting a RCT. A good example is RDD, which had been most frequently conducted using administrative data. It is a useful design to consider for big data from online platforms.
+Comparison group and counterfactuals are crucial -- and there are times, with the right situation and the right data, causality can be inferred from one of the causal designs without conducting a RCT. A good example is RDD, which had been most frequently conducted using administrative data. It is a useful design to consider for big data from online platforms.
 
 Other quasi-experimental designs have also been proposed by WWC, The Book of Why, and DoWhy, such as propsensity score matching. But the kind of data needed for quasi-experimental design and propensity score matching might require other types of data than what is normally collected and stored in the platform.
