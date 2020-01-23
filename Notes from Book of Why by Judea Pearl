@@ -31,7 +31,7 @@ we need to conduct an experiment (do-X).
 
 3rd method of answering causality – do-CALCULUS
 THREE foundational rules of the do-calculus
-RULE 1: P(Y | do(X), Z, W) = P(Y | do(X), Z)
+RULE 1: P(Y | do(X), Z, W) = P(Y | do(X), Z) 
 That is, if we observe that variable W is irrelevant to Y, then the probability of Y will not change.
 
 RULE 2: P(Y | do(X), Z) = P(Y | X, Z)
