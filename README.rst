@@ -2,7 +2,7 @@
 
 The goal here is to compare and contrast the causal inference approach between do-calculus and impact evaluation
 
-This is not about codes for conducting casual inference in do-calculus versus impact evaluation. I don't think we are truly there to automate causal inference, especially by just running a set of codes on a dataset.
+This is not about codes for conducting casual inference in do-calculus versus impact evaluation (not yet). I don't think we are truly there to automate causal inference in all scenarios, especially by just running a set of codes on a dataset. Judea Pearl (2018) has cautioned against model-free causal inference.
 This is a place to consider how the two disciplines approach causality. What are the similarities and differences?
 
 The causal approach from the impact evaluation perspective is taken from:
