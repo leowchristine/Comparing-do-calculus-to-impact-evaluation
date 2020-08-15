@@ -4,4 +4,19 @@ Use effect size to determine DAG
 Use the DAG on a large scale with observational dataset
 Use causal DAG to predict effect
 
-Revise clinical trial phases
+Side note: Consider the clinical trial phases:
+Phase I trials
+Researchers test an experimental drug or treatment in a small group of people for the first time. 
+The researchers evaluate the treatment’s safety, determine a safe dosage range, and identify side effects. 
+
+Phase II trials
+The experimental drug or treatment is given to a larger group of people to see if it is effective and to further evaluate its safety.
+
+Phase III trials
+The experimental study drug or treatment is given to large groups of people. 
+Researchers confirm its effectiveness, monitor side effects, compare it to commonly used treatments, 
+and collect information that will allow the experimental drug or treatment to be used safely. 
+
+Phase IV trials
+Post-marketing studies, which are conducted after a treatment is approved for use by the FDA, 
+provide additional information including the treatment or drug’s risks, benefits, and best use.
